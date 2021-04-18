@@ -2,7 +2,6 @@ import React from 'react';
 import './SingleMainService.css'
 const SingleMainService = (props) => {
     const { name, image, description } = props.service;
-    console.log(image);
     return (
         <div>
         <div className="col">
