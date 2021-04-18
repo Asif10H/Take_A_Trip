@@ -1,0 +1,21 @@
+.caption{
+    color: white;
+    margin-top: -50px;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  img{
+    transition: transform 1s;
+  }
+  .caption:hover{
+    color: #1EC6B6;
+    margin-top: -50px;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  .container img:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 2);
+    transform: rotate(5deg);
+    opacity: 90%;
+    color: #1EC6B6;   
+  } 
