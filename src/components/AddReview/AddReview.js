@@ -21,7 +21,7 @@ const AddReview = () => {
         formData.append('name', info.name);
         formData.append('review', info.review);
 
-        fetch('http://localhost:7077/addReview', {
+        fetch('https://mighty-springs-80713.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })

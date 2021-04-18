@@ -34,7 +34,7 @@ const PlaceDetails = () => {
     const { _id } = useParams();
     const [placeDetail, setPlaceDetail] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:7077/places/${_id}`)
+        fetch(`https://mighty-springs-80713.herokuapp.com/places/${_id}`)
             .then(res => res.json())
             .then(data => setPlaceDetail(data))
     }, [])

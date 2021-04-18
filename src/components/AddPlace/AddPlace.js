@@ -15,8 +15,7 @@ const AddPlace = () => {
             addPrice: data.addPrice,
             imageURL: imageURL
         }
-        console.log(placeDate);
-        const url = `http://localhost:7077/addPlace`
+        const url = `https://mighty-springs-80713.herokuapp.com/addPlace`
         fetch(url, {
             method: 'POST',
             headers: {
