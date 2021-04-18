@@ -41,19 +41,19 @@ const AddReview = () => {
         <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0 }}>
             <h5 className="text-brand">Add A Review</h5>
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-group p-2 pr-3">
                     <label htmlFor="exampleInputPassword1">Name</label>
                     <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Name" />
                 </div>
-                <div className="form-group">
+                <div className="form-group p-2 pr-3">
                     <label htmlFor="exampleInputEmail1">Your Review</label>
                     <input onBlur={handleBlur} type="text" className="form-control" name="review" placeholder="Enter review" />
                 </div>
-                <div className="form-group">
+                <div className="form-group p-2 pr-3">
                     <label htmlFor="exampleInputPassword1">Upload a image</label>
                     <input onChange={handleFileChange} type="file" className="form-control" id="exampleInputPassword1" placeholder="Picture" />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary p-2 pr-5">Submit</button>
             </form>
         </div>
     </section>

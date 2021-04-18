@@ -13,33 +13,37 @@ import AddPlace from './components/AddPlace/AddPlace';
 import AddReview from './components/AddReview/AddReview';
 import HomePage from './components/Home1/HomePage/HomePage';
 import PlaceDetails from './components/PlaceDetails/PlaceDetails';
+import Booking from './components/Booking/Booking';
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <Router> 
+      <Router>
         <Switch>
           <Route path="/home">
-            <Home />
+          <HomePage></HomePage>
           </Route>
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
-          </Route>
-          <Route path="/addPlace">
-           <AddPlace></AddPlace>
-          </Route>
-          <Route path="/review">
-          <AddReview></AddReview>
-          </Route>
-          <Route path="/admin">
+          </PrivateRoute>
+          <PrivateRoute path="/addPlace">
+            <AddPlace></AddPlace>
+          </PrivateRoute>
+          <PrivateRoute path="/review">
+            <AddReview></AddReview>
+          </PrivateRoute>
+          <PrivateRoute path="/admin">
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
           <PrivateRoute path="/place/:_id">
             <PlaceDetails></PlaceDetails>
+          </PrivateRoute>
+          <PrivateRoute path="/booking">
+            <Booking></Booking>
           </PrivateRoute>
           <Route exact path="/">
             <HomePage></HomePage>
@@ -51,3 +55,4 @@ function App() {
 }
 
 export default App;
+

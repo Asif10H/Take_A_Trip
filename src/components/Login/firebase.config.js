@@ -1,10 +1,10 @@
+ 
 const firebaseConfig = {
-    apiKey: "AIzaSyDYQzJJQhK3UwZIDL0nS9u6iRtMV4rBKXk",
-    authDomain: "boighor-29d70.firebaseapp.com",
-    projectId: "boighor-29d70",
-    storageBucket: "boighor-29d70.appspot.com",
-    messagingSenderId: "179214603213",
-    appId: "1:179214603213:web:e3f0b7650f5f3b96176a84"
-  };
-  export default firebaseConfig;
-  
+  apiKey: "AIzaSyDTWNiX1L1jBhDlFGQuw9BHIMfEV5lAGzI",
+  authDomain: "take-a-trip-web-app.firebaseapp.com",
+  projectId: "take-a-trip-web-app",
+  storageBucket: "take-a-trip-web-app.appspot.com",
+  messagingSenderId: "750213727507",
+  appId: "1:750213727507:web:7f17e1bbb4ef2c49ca46e6"
+};
+export default firebaseConfig;

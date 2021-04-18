@@ -54,7 +54,7 @@ const PlaceDetails = () => {
                     packagesData.map(packages => <PackagedDetails packages={packages}></PackagedDetails>)
                 }
             </div>
-            <Link to={"/orders"} className="card-link btn btn-primary mt-3 mb-3">Checkout</Link>
+            <Link to={"/booking"} className="card-link btn btn-primary mt-3 mb-3">Checkout</Link>
         </div>
     );
 };
